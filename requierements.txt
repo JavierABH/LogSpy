@@ -1,3 +1,9 @@
 pystray
 
 pillow
+
+clr
+
+pandas
+
+pyodbc
