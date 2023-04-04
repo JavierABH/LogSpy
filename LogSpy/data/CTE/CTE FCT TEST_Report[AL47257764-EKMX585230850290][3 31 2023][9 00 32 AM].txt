@@ -1,0 +1,600 @@
+********************************************************************************
+UUT Report
+Station ID:                   095PL2ALLEGION
+Serial Number:                AL47257764-EKMX585230850290
+Date:                         Friday, March 31, 2023
+Time:                         9:00:32 AM
+Operator:                     oper
+Execution Time:               76.3766965 seconds
+Number of Results:            263
+UUT Result:                   Failed
+Failure Chain:
+   Step                       Sequence             Sequence File
+   ----                       --------             -------------
+   Test 94 Schlage button pre MainSequence         CTE FCT TEST.seq
+********************************************************************************
+
+Begin Sequence: MainSequence
+(C:\TestSequencer\CTE FCT TEST.seq)
+
+Ports_Name:                    Done
+     Module Time:              0.0024513
+Message Popup:                 Skipped
+Backcheck:                     Passed
+     String:                   1
+     Limits:
+        String:                1
+     Comparison Type:          Ignore Case
+     Module Time:              0.6535889
+Backcheck:                     Skipped
+get PN:                        Done
+     Module Time:              0.0740743
+Get PN:                        Skipped
+Statement:                     Done
+Statement:                     Done
+Statement:                     Done
+Place unit:                    Passed
+     Module Time:              12.5371891
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+Get Starttime:                 Skipped
+starttime:                     Done
+     Module Time:              0.0004029
+If {False}:                    Done
+End If:                        Done
+If {True}:                     Done
+   Enable Com UART:               Done
+        Module Time:              0.3007466
+   Enable Com UART 2:             Done
+        Module Time:              0.3013379
+   Enable POE:                    Done
+        Module Time:              0.3014938
+   Init Com RS485:                Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          GE (>=)
+        Module Time:              0.5309946
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Init Com RS485 (Loop Index: 0): Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          GE (>=)
+        Module Time:              0.5309946
+   Init Com K24 UART:             Done
+        Module Time:              0.2772086
+   Init Com K66 UART:             Skipped
+   Wait:                          Done
+   Power POE on:                  Done
+        Module Time:              0.2312485
+   Enable Power POE:              Done
+        Module Time:              0.3018584
+   Wait:                          Done
+   Test 2 VSystem at POE:         Passed
+        Measurement:              11.72255
+        Limits:
+           Low:                   11.4
+           High:                  12.6
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1365316
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 3 12V at POE:             Skipped
+   Test 4 3.3V at POE:            Passed
+        Measurement:              3.32847
+        Limits:
+           Low:                   3.2
+           High:                  3.4
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1495875
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Get K24 UART:                  Done
+        read buffer [Out]:        
+**************************
+
+Main Task Started, Wait...
+
+FWVR,00.00.00.00.00, BL Version :  1.7.0
+
+FWVR,00.00.00.00.00, FW Version :  1.8.3
+
+Compiled: Sep 22 2021 19:28:32
+
+**************************
+
+        Module Time:              1.0031701
+   Wait:                          Done
+   Get K66 UART:                  Skipped
+   Test 5.1 K24 FW Ver:           Passed
+        String:                   FW Version :  1.8.3
+        Limits:
+           String:                FW Version :  1.8.3
+        Comparison Type:          Ignore Case
+        Module Time:              0.001714
+   Test 5.2 K24 Boot Ver:         Passed
+        String:                   BL Version :  1.7.0
+        Limits:
+           String:                BL Version :  1.7.0
+        Comparison Type:          Ignore Case
+        Module Time:              0.0008363
+   Test 5.3 K24 FW Date:          Passed
+        String:                   Compiled: Sep 22 2021 19:28:32
+        Limits:
+           String:                Compiled: Sep 22 2021 19:28:32
+        Comparison Type:          Ignore Case
+        Module Time:              0.001123
+   CloseUART:                     Done
+        Module Time:              0.1130089
+   CloseUART2:                    Done
+        Module Time:              0.0021861
+   Disable Com UART:              Done
+        Module Time:              0.3013339
+   Disable Com UART 2:            Done
+        Module Time:              0.302054
+   Wait:                          Done
+   Test 12.1 Status POE at POE:   Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        power_Line [Out]:         0
+        power_POE_Plus [Out]:     0
+        power_POE [Out]:          1
+        Module Time:              0.2103503
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 12.1 Status POE at POE:   Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Test 12.2 Status POE+ at POE:  Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Test 12.3 Status LINE at POE:  Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = True
+                                  [1] = True
+                                  [2] = False
+                                  [3] = False
+                                  [4] = False
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = True
+                                  [16] = True
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.0894838
+   Test 11.1 POE Led ON at POE:   Passed
+        Module Time:              0.0012813
+   Test 11.2 POE+ Led OFF at POE: Skipped
+   Test 11.3 LINE Led OFF at POE: Passed
+        Module Time:              0.0023417
+   Test 9.1 K24 FW Ver:           Passed
+        String:                   1.8.3
+        Limits:
+           String:                1.8.3
+        Comparison Type:          Ignore Case
+        MCU [Out]:                1.8.3
+        wiFi [Out]:               2.10.0.0
+        BLE [Out]:                02.13.06.32744
+        FFR [Out]:                28.29.30
+        ACK [Out]:                1
+        Module Time:              0.1107893
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 9.1 K24 FW Ver:           Passed
+        String:                   1.8.3
+        Limits:
+           String:                1.8.3
+        Comparison Type:          Ignore Case
+   Test 9.3 WIFI FW Ver:          Passed
+        String:                   2.10.0.0
+        Limits:
+           String:                2.10.0.0
+        Comparison Type:          Ignore Case
+   Test 9.4 BLE FW Ver:           Passed
+        String:                   02.13.06.32744
+        Limits:
+           String:                02.13.06.32744
+        Comparison Type:          Ignore Case
+   Test 9.5 FFR FW Ver:           Passed
+        String:                   28.29.30
+        Limits:
+           String:                28.29.30
+        Comparison Type:          Ignore Case
+   Test 10.1 K66 FW Ver:          Skipped
+   Test 10.1 K66 FW Ver:          Skipped
+   Test 10.1 K66 BL Ver:          Skipped
+   Get LED status:                Done
+        Button Index:             1
+   Test 7-8 RS485 TXRX Led ON at POE: Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Statement:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0025811
+   FDRon:                         Done
+        Module Time:              0.0006781
+   While {looping} (Locals.fdr!=0 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.002934
+      Get Inputs:                    Done
+           Module Time:              0.2042547
+   End While:                     Done
+   While {looping} (Locals.fdr!=0 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0020338
+      Get Inputs:                    Done
+           Module Time:              0.0944593
+   End While:                     Done
+   While {looping} (Locals.fdr!=0 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0020467
+      Get Inputs:                    Done
+           Module Time:              0.0923563
+   End While:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0023613
+   Wait:                          Passed
+
+   Begin Sequence: OperMsg
+   (C:\TestSequencer\CTE FCT TEST.seq)
+
+   OperMsg:                       Done
+        Module Time:              2.1132393
+
+   End Sequence: OperMsg
+
+   Test 93 FDR button pressed:    Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Statement:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0023259
+   FDROff:                        Done
+        Module Time:              0.0002784
+   While {looping} (Locals.fdr!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0026334
+      Get Inputs:                    Done
+           Module Time:              0.249366
+   End While:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0026043
+   Wait:                          Passed
+
+   Begin Sequence: OperMsg
+   (C:\TestSequencer\CTE FCT TEST.seq)
+
+   OperMsg:                       Done
+        Module Time:              0.9131062
+
+   End Sequence: OperMsg
+
+   Test 96 FDR button released:   Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Statement:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0026099
+   SCHon:                         Done
+        Module Time:              0.000294
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0028612
+      Get Inputs:                    Done
+           Module Time:              0.1207347
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0020848
+      Get Inputs:                    Done
+           Module Time:              0.0954771
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019703
+      Get Inputs:                    Done
+           Module Time:              0.092113
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019524
+      Get Inputs:                    Done
+           Module Time:              0.0935793
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019567
+      Get Inputs:                    Done
+           Module Time:              0.0921716
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019815
+      Get Inputs:                    Done
+           Module Time:              0.0933926
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019699
+      Get Inputs:                    Done
+           Module Time:              0.0928089
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019772
+      Get Inputs:                    Done
+           Module Time:              0.076329
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.001961
+      Get Inputs:                    Done
+           Module Time:              0.0936912
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019812
+      Get Inputs:                    Done
+           Module Time:              0.0931055
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019385
+      Get Inputs:                    Done
+           Module Time:              0.0923139
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0018514
+      Get Inputs:                    Done
+           Module Time:              0.0932122
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.001966
+      Get Inputs:                    Done
+           Module Time:              0.0922964
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019494
+      Get Inputs:                    Done
+           Module Time:              1.5009476
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019855
+      Get Inputs:                    Done
+           Module Time:              1.5004367
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019623
+      Get Inputs:                    Done
+           Module Time:              1.5013664
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019408
+      Get Inputs:                    Done
+           Module Time:              0.231715
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.001966
+      Get Inputs:                    Done
+           Module Time:              0.0937757
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.002062
+      Get Inputs:                    Done
+           Module Time:              0.092163
+   End While:                     Done
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0016286
+      Get Inputs:                    Done
+           Module Time:              0.0933784
+   End While:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0023749
+   Wait:                          Passed
+
+   Begin Sequence: OperMsg
+   (C:\TestSequencer\CTE FCT TEST.seq)
+
+   OperMsg:                       Done
+        Module Time:              16.7152586
+
+   End Sequence: OperMsg
+
+   Test 94 Schlage button pressed: Failed
+        Measurement:              0
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+Message Popup:                 Skipped
+Goto:                          Skipped
+Close Com RS485:               Done
+     Module Time:              0.6128662
+SET ELOAD OFF:                 Done
+     Module Time:              0.1018385
+BK86 SET ELOAD OFF:            Skipped
+CloseUART:                     Done
+     Module Time:              0.0016163
+CloseUART2:                    Done
+     Module Time:              0.0013336
+Power LINE off:                Done
+     Module Time:              0.2895103
+Power POE off:                 Done
+     Module Time:              0.1958148
+Power BT dongle off:           Done
+     Module Time:              0.311862
+SET ELOAD CURR:                Done
+     Module Time:              0.1019272
+BK86 SET ELOAD CURR:           Skipped
+Disable Com UART:              Done
+     Module Time:              0.3017878
+Disable Com UART 2:            Done
+     Module Time:              0.301857
+Disable REN:                   Done
+     Module Time:              0.3017806
+Disable Resistor:              Done
+     Module Time:              0.3018008
+Disable REX:                   Done
+     Module Time:              0.3018147
+Disable DPS:                   Done
+     Module Time:              0.3017345
+Disable REL:                   Done
+     Module Time:              0.3018776
+Disable TAMP:                  Done
+     Module Time:              0.3017494
+Disable BT:                    Done
+     Module Time:              0.3008694
+Disable WIEGAND_D0:            Done
+     Module Time:              0.3018557
+Disable WIEGAND_D1:            Done
+     Module Time:              0.3018991
+Disable Power POE:             Done
+     Module Time:              0.3017931
+Disable POE:                   Done
+     Module Time:              0.3018203
+Disable Power POE+:            Done
+     Module Time:              0.3017912
+Disable POE+:                  Done
+     Module Time:              0.3018431
+Connect RDR to ELOAD:          Done
+     Module Time:              0.3017431
+Set OperMsg:                   Done
+     Module Time:              0.0026139
+endtime:                       Done
+     Module Time:              0.0002119
+Get Endtime:                   Skipped
+Statement:                     Done
+Get Fail Str:                  Done
+     Module Time:              0.3020832
+Statement:                     Done
+Statement:                     Skipped
+send result:                   Done
+     Module Time:              0.0460429
+If {True}:                     Done
+End If:                        Done
+InsertProcess:                 Skipped
+Remove unit:                   Skipped
+
+End Sequence: MainSequence
+
+End UUT Report
+

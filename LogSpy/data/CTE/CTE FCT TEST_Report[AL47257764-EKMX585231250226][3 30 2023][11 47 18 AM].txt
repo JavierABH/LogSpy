@@ -1,0 +1,3825 @@
+********************************************************************************
+UUT Report
+Station ID:                   095PL2ALLEGION
+Serial Number:                AL47257764-EKMX585231250226
+Date:                         Thursday, March 30, 2023
+Time:                         11:47:18 AM
+Operator:                     oper
+Execution Time:               276.3186191 seconds
+Number of Results:            1021
+UUT Result:                   Passed
+********************************************************************************
+
+Begin Sequence: MainSequence
+(C:\TestSequencer\CTE FCT TEST.seq)
+
+Ports_Name:                    Done
+     Module Time:              0.0009674
+Message Popup:                 Skipped
+Backcheck:                     Passed
+     String:                   1
+     Limits:
+        String:                1
+     Comparison Type:          Ignore Case
+     Module Time:              0.029124
+Backcheck:                     Skipped
+get PN:                        Done
+     Module Time:              0.0050897
+Get PN:                        Skipped
+Statement:                     Done
+Statement:                     Done
+Statement:                     Done
+Place unit:                    Passed
+     Module Time:              5.2649285
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+Get Starttime:                 Skipped
+starttime:                     Done
+     Module Time:              0.0002063
+If {False}:                    Done
+End If:                        Done
+If {True}:                     Done
+   Enable Com UART:               Done
+        Module Time:              0.3003049
+   Enable Com UART 2:             Done
+        Module Time:              0.3001626
+   Enable POE:                    Done
+        Module Time:              0.3001457
+   Init Com RS485:                Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          GE (>=)
+        Module Time:              0.50848
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Init Com RS485 (Loop Index: 0): Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          GE (>=)
+        Module Time:              0.50848
+   Init Com K24 UART:             Done
+        Module Time:              0.2768759
+   Init Com K66 UART:             Skipped
+   Wait:                          Done
+   Power POE on:                  Done
+        Module Time:              0.2307158
+   Enable Power POE:              Done
+        Module Time:              0.3010601
+   Wait:                          Done
+   Test 2 VSystem at POE:         Passed
+        Measurement:              11.77486
+        Limits:
+           Low:                   11.4
+           High:                  12.6
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1442511
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 3 12V at POE:             Skipped
+   Test 4 3.3V at POE:            Passed
+        Measurement:              3.30885
+        Limits:
+           Low:                   3.2
+           High:                  3.4
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1322467
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Get K24 UART:                  Done
+        read buffer [Out]:        
+**************************
+
+Main Task Started, Wait...
+
+FWVR,00.00.00.00.00, BL Version :  1.7.0
+
+FWVR,00.00.00.00.00, FW Version :  1.8.3
+
+Compiled: Sep 22 2021 19:28:32
+
+**************************
+
+        Module Time:              1.001073
+   Wait:                          Done
+   Get K66 UART:                  Skipped
+   Test 5.1 K24 FW Ver:           Passed
+        String:                   FW Version :  1.8.3
+        Limits:
+           String:                FW Version :  1.8.3
+        Comparison Type:          Ignore Case
+        Module Time:              0.0009333
+   Test 5.2 K24 Boot Ver:         Passed
+        String:                   BL Version :  1.7.0
+        Limits:
+           String:                BL Version :  1.7.0
+        Comparison Type:          Ignore Case
+        Module Time:              0.0006953
+   Test 5.3 K24 FW Date:          Passed
+        String:                   Compiled: Sep 22 2021 19:28:32
+        Limits:
+           String:                Compiled: Sep 22 2021 19:28:32
+        Comparison Type:          Ignore Case
+        Module Time:              0.0007449
+   CloseUART:                     Done
+        Module Time:              0.1018762
+   CloseUART2:                    Done
+        Module Time:              0.0011449
+   Disable Com UART:              Done
+        Module Time:              0.3001285
+   Disable Com UART 2:            Done
+        Module Time:              0.3001261
+   Wait:                          Done
+   Test 12.1 Status POE at POE:   Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        power_Line [Out]:         0
+        power_POE_Plus [Out]:     0
+        power_POE [Out]:          1
+        Module Time:              0.1428033
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 12.1 Status POE at POE:   Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Test 12.2 Status POE+ at POE:  Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Test 12.3 Status LINE at POE:  Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = True
+                                  [1] = True
+                                  [2] = False
+                                  [3] = False
+                                  [4] = False
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = True
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.2175348
+   Test 11.1 POE Led ON at POE:   Passed
+        Module Time:              0.0010095
+   Test 11.2 POE+ Led OFF at POE: Skipped
+   Test 11.3 LINE Led OFF at POE: Passed
+        Module Time:              0.0016647
+   Test 9.1 K24 FW Ver:           Passed
+        String:                   1.8.3
+        Limits:
+           String:                1.8.3
+        Comparison Type:          Ignore Case
+        MCU [Out]:                1.8.3
+        wiFi [Out]:               2.10.0.0
+        BLE [Out]:                02.13.06.32744
+        FFR [Out]:                28.29.30
+        ACK [Out]:                1
+        Module Time:              0.1756234
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 9.1 K24 FW Ver:           Passed
+        String:                   1.8.3
+        Limits:
+           String:                1.8.3
+        Comparison Type:          Ignore Case
+   Test 9.3 WIFI FW Ver:          Passed
+        String:                   2.10.0.0
+        Limits:
+           String:                2.10.0.0
+        Comparison Type:          Ignore Case
+   Test 9.4 BLE FW Ver:           Passed
+        String:                   02.13.06.32744
+        Limits:
+           String:                02.13.06.32744
+        Comparison Type:          Ignore Case
+   Test 9.5 FFR FW Ver:           Passed
+        String:                   28.29.30
+        Limits:
+           String:                28.29.30
+        Comparison Type:          Ignore Case
+   Test 10.1 K66 FW Ver:          Skipped
+   Test 10.1 K66 FW Ver:          Skipped
+   Test 10.1 K66 BL Ver:          Skipped
+   Get LED status:                Done
+        Button Index:             1
+   Test 7-8 RS485 TXRX Led ON at POE: Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Statement:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0013723
+   FDRon:                         Done
+        Module Time:              0.0002351
+   While {looping} (Locals.fdr!=0 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0016034
+      Get Inputs:                    Done
+           Module Time:              0.1684658
+   End While:                     Done
+   While {looping} (Locals.fdr!=0 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0020239
+      Get Inputs:                    Done
+           Module Time:              0.0952152
+   End While:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.00166
+   Wait:                          Passed
+
+   Begin Sequence: OperMsg
+   (C:\TestSequencer\CTE FCT TEST.seq)
+
+   OperMsg:                       Done
+        Module Time:              1.5133284
+
+   End Sequence: OperMsg
+
+   Test 93 FDR button pressed:    Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Statement:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0016269
+   FDROff:                        Done
+        Module Time:              0.0002771
+   While {looping} (Locals.fdr!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0020024
+      Get Inputs:                    Done
+           Module Time:              0.1989386
+   End While:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0018898
+   Wait:                          Passed
+
+   Begin Sequence: OperMsg
+   (C:\TestSequencer\CTE FCT TEST.seq)
+
+   OperMsg:                       Done
+        Module Time:              0.9132165
+
+   End Sequence: OperMsg
+
+   Test 96 FDR button released:   Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Statement:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0019991
+   SCHon:                         Done
+        Module Time:              0.0005695
+   While {looping} (Locals.schlage!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.002206
+      Get Inputs:                    Done
+           Module Time:              0.1282631
+   End While:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0018739
+   Wait:                          Passed
+
+   Begin Sequence: OperMsg
+   (C:\TestSequencer\CTE FCT TEST.seq)
+
+   OperMsg:                       Done
+        Module Time:              0.8132386
+
+   End Sequence: OperMsg
+
+   Test 94 Schlage button pressed: Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Statement:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0019948
+   SCHOff:                        Done
+        Module Time:              0.0003188
+   While {looping} (Locals.schlage!=0 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0018504
+      Get Inputs:                    Done
+           Module Time:              0.1156016
+   End While:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0019338
+   Wait:                          Passed
+
+   Begin Sequence: OperMsg
+   (C:\TestSequencer\CTE FCT TEST.seq)
+
+   OperMsg:                       Done
+        Module Time:              0.8154354
+
+   End Sequence: OperMsg
+
+   Test 97 Schlage button released: Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Statement:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0020471
+   LOCKon:                        Done
+        Module Time:              0.0003208
+   While {looping} (Locals.HP34970[0]<0 || Locals.HP34970[0]>5)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0018382
+      LOCK DRY NO:                   Done
+           Module Time:              0.253187
+   End While:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0020299
+   Wait:                          Passed
+
+   Begin Sequence: OperMsg
+   (C:\TestSequencer\CTE FCT TEST.seq)
+
+   OperMsg:                       Done
+        Module Time:              0.9151381
+
+   End Sequence: OperMsg
+
+   Test 99 LOCK button pressed:   Passed
+        Measurement:              0.501356
+        Limits:
+           Low:                   0
+           High:                  5
+        Comparison Type:          GELE (>= <=)
+   Statement:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0016951
+   LOCKOff:                       Done
+        Module Time:              0.0004294
+   While {looping} Locals.HP34970[0]<1000  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0018935
+      LOCK DRY NO:                   Done
+           Module Time:              0.6428629
+   End While:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0019166
+   Wait:                          Passed
+
+   Begin Sequence: OperMsg
+   (C:\TestSequencer\CTE FCT TEST.seq)
+
+   OperMsg:                       Done
+        Module Time:              1.3158575
+
+   End Sequence: OperMsg
+
+   Test 105 LOCK button released: Passed
+        Measurement:              9.9e+037
+        Limits:
+           Low:                   1000
+        Comparison Type:          GE (>=)
+   Statement:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0018696
+   ALARMon:                       Done
+        Module Time:              0.0003056
+   While {looping} (Locals.HP34970[0]<0 || Locals.HP34970[0]>5)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0020491
+      ALARM DRY NO:                  Done
+           Module Time:              0.2431175
+   End While:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0020908
+   Wait:                          Passed
+
+   Begin Sequence: OperMsg
+   (C:\TestSequencer\CTE FCT TEST.seq)
+
+   OperMsg:                       Done
+        Module Time:              0.9142322
+
+   End Sequence: OperMsg
+
+   Test 100 ALARM button pressed: Passed
+        Measurement:              0.667736
+        Limits:
+           Low:                   0
+           High:                  5
+        Comparison Type:          GELE (>= <=)
+   Statement:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0019792
+   ALARMOff:                      Done
+        Module Time:              0.0003129
+   While {looping} Locals.HP34970[0]<1000  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0020057
+      ALARM DRY NO:                  Done
+           Module Time:              0.6418752
+   End While:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0020017
+   Wait:                          Passed
+
+   Begin Sequence: OperMsg
+   (C:\TestSequencer\CTE FCT TEST.seq)
+
+   OperMsg:                       Done
+        Module Time:              1.3143961
+
+   End Sequence: OperMsg
+
+   Test 106 ALARM button released: Passed
+        Measurement:              9.9e+037
+        Limits:
+           Low:                   1000
+        Comparison Type:          GE (>=)
+   Statement:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0020126
+   AUXon:                         Done
+        Module Time:              0.0003738
+   While {looping} (Locals.HP34970[0]<0 || Locals.HP34970[0]>5)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019776
+      AUX DRY NO:                    Done
+           Module Time:              0.2429622
+   End While:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0019216
+   Wait:                          Passed
+
+   Begin Sequence: OperMsg
+   (C:\TestSequencer\CTE FCT TEST.seq)
+
+   OperMsg:                       Done
+        Module Time:              0.9147898
+
+   End Sequence: OperMsg
+
+   Test 101 AUX button pressed:   Passed
+        Measurement:              0.456536
+        Limits:
+           Low:                   0
+           High:                  5
+        Comparison Type:          GELE (>= <=)
+   Statement:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0019749
+   AUXOff:                        Done
+        Module Time:              0.0003622
+   While {looping} Locals.HP34970[0]<1000  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019047
+      AUX DRY NO:                    Done
+           Module Time:              0.6420368
+   End While:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0019391
+   Wait:                          Passed
+
+   Begin Sequence: OperMsg
+   (C:\TestSequencer\CTE FCT TEST.seq)
+
+   OperMsg:                       Done
+        Module Time:              1.3144011
+
+   End Sequence: OperMsg
+
+   Test 107 AUX button released:  Passed
+        Measurement:              9.9e+037
+        Limits:
+           Low:                   1000
+        Comparison Type:          GE (>=)
+   Statement:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0015779
+   COVEROff:                      Done
+        Module Time:              0.000337
+   While {looping} (Locals.cover!=0 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.001918
+      Get Inputs:                    Done
+           Module Time:              0.1741104
+   End While:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0016567
+   Wait:                          Passed
+
+   Begin Sequence: OperMsg
+   (C:\TestSequencer\CTE FCT TEST.seq)
+
+   OperMsg:                       Done
+        Module Time:              0.8145769
+
+   End Sequence: OperMsg
+
+   Test 168 IR COVER OFF:         Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Statement:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0018647
+   COVERon:                       Done
+        Module Time:              0.0003529
+   While {looping} (Locals.cover!=1 || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0018713
+      Get Inputs:                    Done
+           coverTamper [Out]:        1
+           Module Time:              0.1587637
+   End While:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.001674
+   Wait:                          Passed
+
+   Begin Sequence: OperMsg
+   (C:\TestSequencer\CTE FCT TEST.seq)
+
+   OperMsg:                       Done
+        Module Time:              0.8155148
+
+   End Sequence: OperMsg
+
+   Test 166 IR COVER ON:          Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Statement:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0019448
+   DIPSWon:                       Done
+        Module Time:              0.0003301
+   While {looping} (Locals.dipsws!="10011" || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019507
+      DIPSWs:                        Done
+           RDR_Tamper [Out]:         0
+           REL [Out]:                0
+           REN [Out]:                0
+           DPS [Out]:                1
+           REX [Out]:                1
+           Module Time:              0.2352179
+   End While:                     Done
+   While {looping} (Locals.dipsws!="10011" || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019958
+      DIPSWs:                        Done
+           RDR_Tamper [Out]:         1
+           REL [Out]:                0
+           REN [Out]:                0
+           DPS [Out]:                1
+           REX [Out]:                1
+           Module Time:              0.2013041
+   End While:                     Done
+   While {looping} (Locals.dipsws!="10011" || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0018825
+      DIPSWs:                        Done
+           RDR_Tamper [Out]:         1
+           REL [Out]:                0
+           REN [Out]:                0
+           DPS [Out]:                1
+           REX [Out]:                1
+           Module Time:              0.1855625
+   End While:                     Done
+   While {looping} (Locals.dipsws!="10011" || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019977
+      DIPSWs:                        Done
+           RDR_Tamper [Out]:         1
+           REL [Out]:                1
+           REN [Out]:                0
+           DPS [Out]:                1
+           REX [Out]:                1
+           Module Time:              0.2002467
+   End While:                     Done
+   While {looping} (Locals.dipsws!="10011" || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0020901
+      DIPSWs:                        Done
+           RDR_Tamper [Out]:         1
+           REL [Out]:                1
+           REN [Out]:                0
+           DPS [Out]:                0
+           REX [Out]:                1
+           Module Time:              0.200829
+   End While:                     Done
+   While {looping} (Locals.dipsws!="10011" || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0018365
+      DIPSWs:                        Done
+           RDR_Tamper [Out]:         1
+           REL [Out]:                1
+           REN [Out]:                0
+           DPS [Out]:                0
+           REX [Out]:                0
+           Module Time:              0.1843858
+   End While:                     Done
+   While {looping} (Locals.dipsws!="10011" || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019795
+      DIPSWs:                        Done
+           RDR_Tamper [Out]:         1
+           REL [Out]:                1
+           REN [Out]:                1
+           DPS [Out]:                0
+           REX [Out]:                0
+           Module Time:              0.1994862
+   End While:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0019269
+   Wait:                          Passed
+
+   Begin Sequence: OperMsg
+   (C:\TestSequencer\CTE FCT TEST.seq)
+
+   OperMsg:                       Done
+        Module Time:              8.7125593
+
+   End Sequence: OperMsg
+
+   Test 143.1 REN by DIPSW ON:    Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Test 143.2 REX by DIPSW ON:    Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Test 143.3 DPS by DIPSW ON:    Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Test 143.4 REL by DIPSW ON:    Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Test 143.5 TAMP by DIPSW ON:   Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Statement:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0014783
+   DIPSWOff:                      Done
+        Module Time:              0.0002642
+   While {looping} (Locals.dipsws!="01100" || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0021772
+      DIPSWs:                        Done
+           RDR_Tamper [Out]:         1
+           REL [Out]:                1
+           REN [Out]:                1
+           DPS [Out]:                0
+           REX [Out]:                0
+           Module Time:              0.185741
+   End While:                     Done
+   While {looping} (Locals.dipsws!="01100" || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019802
+      DIPSWs:                        Done
+           RDR_Tamper [Out]:         0
+           REL [Out]:                1
+           REN [Out]:                1
+           DPS [Out]:                0
+           REX [Out]:                0
+           Module Time:              0.1854274
+   End While:                     Done
+   While {looping} (Locals.dipsws!="01100" || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0020905
+      DIPSWs:                        Done
+           RDR_Tamper [Out]:         0
+           REL [Out]:                1
+           REN [Out]:                1
+           DPS [Out]:                0
+           REX [Out]:                0
+           Module Time:              0.2006555
+   End While:                     Done
+   While {looping} (Locals.dipsws!="01100" || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0020133
+      DIPSWs:                        Done
+           RDR_Tamper [Out]:         0
+           REL [Out]:                0
+           REN [Out]:                1
+           DPS [Out]:                0
+           REX [Out]:                0
+           Module Time:              0.2000195
+   End While:                     Done
+   While {looping} (Locals.dipsws!="01100" || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0019746
+      DIPSWs:                        Done
+           RDR_Tamper [Out]:         0
+           REL [Out]:                0
+           REN [Out]:                1
+           DPS [Out]:                1
+           REX [Out]:                0
+           Module Time:              0.1837124
+   End While:                     Done
+   While {looping} (Locals.dipsws!="01100" || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0020842
+      DIPSWs:                        Done
+           RDR_Tamper [Out]:         0
+           REL [Out]:                0
+           REN [Out]:                1
+           DPS [Out]:                1
+           REX [Out]:                1
+           Module Time:              0.2013972
+   End While:                     Done
+   While {looping} (Locals.dipsws!="01100" || Locals.ack!=1)  && locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      Set OperMsg:                   Done
+           Module Time:              0.0020666
+      DIPSWs:                        Done
+           RDR_Tamper [Out]:         0
+           REL [Out]:                0
+           REN [Out]:                0
+           DPS [Out]:                1
+           REX [Out]:                1
+           Module Time:              0.1997034
+   End While:                     Done
+   Set OperMsg:                   Done
+        Module Time:              0.0019795
+   Wait:                          Passed
+
+   Begin Sequence: OperMsg
+   (C:\TestSequencer\CTE FCT TEST.seq)
+
+   OperMsg:                       Done
+        Module Time:              8.6128
+
+   End Sequence: OperMsg
+
+   Test 154.1 REN  by DIPSW OFF:  Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Test 154.2 REX by DIPSW OFF:   Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Test 154.3 DPS by DIPSW OFF:   Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Test 154.4 REL by DIPSW OFF:   Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Test 154.5 TAMP by DIPSW OFF:  Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Test 7 RS485 TX Led ON at POE: Skipped
+   Test 8 RS485 RX Led ON at POE: Skipped
+   Disable Com UART:              Done
+        Module Time:              0.300683
+   Disable Com UART 2:            Done
+        Module Time:              0.3001602
+   Test 219 Ethernet Ping:        Skipped
+   Test 220.1 LINK Led ON at POE: Skipped
+   Test 220.1 LINK Led ON at POE: Skipped
+   Test 220.2 ACTIV Led ON at POE: Skipped
+   Connect RDR to ELOAD:          Done
+        Module Time:              0.3004436
+   Configure Max Input:           Done
+        Module Time:              0.3011998
+   BK86 Configure Max Input:      Skipped
+   Configure Mode:                Done
+        Module Time:              0.1015981
+   BK86 Configure Mode:           Skipped
+   SET ELOAD CURR:                Done
+        Module Time:              0.1009151
+   BK86 SET ELOAD CURR:           Skipped
+   SET ELOAD ON:                  Done
+        Module Time:              0.1008774
+   BK86 SET ELOAD ON:             Skipped
+   Wait:                          Done
+   Test 17.2 Rdr Fault wLoad 0.30A at POE: Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+        relay_Current_Fault [Out]:0
+        RDR_Current_Fault [Out]:  0
+        Module Time:              0.196568
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = True
+                                  [1] = True
+                                  [2] = False
+                                  [3] = False
+                                  [4] = False
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = True
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.2175652
+   Test 16 RDR Fault Led OFF wLoad 0.30A at POE: Passed
+        Module Time:              0.0018402
+   SET ELOAD OFF:                 Done
+        Module Time:              0.1007744
+   BK86 SET ELOAD OFF:            Skipped
+   Wait:                          Done
+   Test 22.2 Rdr Fault woLoad at POE: Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+        relay_Current_Fault [Out]:0
+        RDR_Current_Fault [Out]:  0
+        Module Time:              0.0828701
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = True
+                                  [1] = False
+                                  [2] = False
+                                  [3] = False
+                                  [4] = False
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = True
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.2199692
+   Test 21 RDR Fault Led OFF woLoad at POE: Passed
+        Module Time:              0.0022159
+   SET ELOAD CURR:                Done
+        Module Time:              0.1010207
+   BK86 SET ELOAD CURR:           Skipped
+   SET ELOAD ON:                  Done
+        Module Time:              0.100739
+   BK86 SET ELOAD ON:             Skipped
+   Wait:                          Done
+   Test 27.2 Rdr Fault wLoad 0.36A at POE: Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        relay_Current_Fault [Out]:0
+        RDR_Current_Fault [Out]:  1
+        Module Time:              0.0830049
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = True
+                                  [1] = True
+                                  [2] = False
+                                  [3] = False
+                                  [4] = True
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = True
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.217946
+   Test 26 RDR Fault Led ON wLoad 0.36A at POE: Passed
+        Module Time:              0.0010492
+   SET ELOAD OFF:                 Done
+        Module Time:              0.101228
+   BK86 SET ELOAD OFF:            Skipped
+   Wait:                          Done
+   Get LED status:                Skipped
+   Test 27 RDR Fault Led OFF woLoad at POE: Skipped
+   Connect OUTPUT to ELOAD:       Done
+        Module Time:              0.300634
+   SET ELOAD CURR:                Done
+        Module Time:              0.1011482
+   BK86 SET ELOAD CURR:           Skipped
+   SET ELOAD ON:                  Done
+        Module Time:              0.1010211
+   BK86 SET ELOAD ON:             Skipped
+   Wait:                          Done
+   Test 17.1 OUTPUT Fault wLoad 0.50A at POE: Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+        relay_Current_Fault [Out]:0
+        RDR_Current_Fault [Out]:  1
+        Module Time:              0.2722818
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = True
+                                  [1] = True
+                                  [2] = False
+                                  [3] = False
+                                  [4] = False
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = True
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.2183155
+   Test 15 OUTPUT Fault Led OFF wLoad 0.50A at POE: Passed
+        Module Time:              0.0025702
+   SET ELOAD OFF:                 Done
+        Module Time:              0.1012121
+   BK86 SET ELOAD OFF:            Skipped
+   Wait:                          Done
+   Test 22.1 OUTPUT Fault woLoad at POE: Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+        relay_Current_Fault [Out]:0
+        RDR_Current_Fault [Out]:  1
+        Module Time:              0.0806804
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = True
+                                  [1] = True
+                                  [2] = False
+                                  [3] = False
+                                  [4] = False
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = True
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.2187919
+   Test 20 OUTPUT Fault Led OFF woLoad at POE: Passed
+        Module Time:              0.0023315
+   SET ELOAD CURR:                Done
+        Module Time:              0.1008833
+   BK86 SET ELOAD CURR:           Skipped
+   SET ELOAD ON:                  Done
+        Module Time:              0.1011363
+   BK86 SET ELOAD ON:             Skipped
+   Wait:                          Done
+   Test 27.1 OUTPUT Fault wLoad 0.6A at POE: Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        relay_Current_Fault [Out]:1
+        RDR_Current_Fault [Out]:  1
+        Module Time:              0.0681102
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = True
+                                  [1] = True
+                                  [2] = False
+                                  [3] = True
+                                  [4] = False
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = True
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.219222
+   Test 25 OUTPUT Fault Led ON wLoad 0.60A at POE: Passed
+        Module Time:              0.0013495
+   SET ELOAD OFF:                 Done
+        Module Time:              0.1010432
+   BK86 SET ELOAD OFF:            Skipped
+   Wait:                          Done
+   Get LED status:                Skipped
+   Test 26 OUTPUT Fault Led OFF woLoad at POE: Skipped
+   Disconnect OUTPUT from ELOAD:  Done
+        Module Time:              0.300633
+   Disable Power POE:             Done
+        Module Time:              0.3010942
+   Disable POE:                   Done
+        Module Time:              0.3009936
+   Wait:                          Done
+   Enable POE+:                   Done
+        Module Time:              0.3011085
+   Enable Power  POE+:            Done
+        Module Time:              0.3000957
+   Wait:                          Done
+   Test 30 VSystem at POE+:       Passed
+        Measurement:              11.769194
+        Limits:
+           Low:                   11.4
+           High:                  12.6
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1449096
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 31 12V at POE+:           Passed
+        Measurement:              11.65193
+        Limits:
+           Low:                   11
+           High:                  12
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1322497
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 32 3.3V at POE+:          Passed
+        Measurement:              3.31016
+        Limits:
+           Low:                   3.2
+           High:                  3.4
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1304615
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 34.2 Status POE+ at POE+: Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        power_Line [Out]:         0
+        power_POE_Plus [Out]:     1
+        power_POE [Out]:          0
+        Module Time:              0.0760691
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 34.1 Status POE at POE+:  Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Test 34.2 Status POE+ at POE+: Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Test 34.3 Status LINE at POE+: Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = False
+                                  [1] = True
+                                  [2] = True
+                                  [3] = False
+                                  [4] = False
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = True
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.2162472
+   Test 33.1 POE Led OFF at POE+: Passed
+        Module Time:              0.0017686
+   Test 33.2 POE+ Led ON at POE+: Passed
+        Module Time:              0.0010379
+   Test 33.3 LINE Led OFF at POE+: Skipped
+   SET ELOAD CURR:                Done
+        Module Time:              0.101027
+   BK86 SET ELOAD CURR:           Skipped
+   SET ELOAD ON:                  Done
+        Module Time:              0.100878
+   BK86 SET ELOAD ON:             Skipped
+   Wait:                          Done
+   Test 39.2 Rdr Fault wLoad 0.30A at POE+: Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+        relay_Current_Fault [Out]:0
+        RDR_Current_Fault [Out]:  0
+        Module Time:              0.1750589
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   SET ELOAD OFF:                 Done
+        Module Time:              0.1015836
+   BK86 SET ELOAD OFF:            Skipped
+   Test 44.2 Rdr Fault woLoad at POE+: Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+        relay_Current_Fault [Out]:0
+        RDR_Current_Fault [Out]:  0
+        Module Time:              0.0837892
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   SET ELOAD CURR:                Done
+        Module Time:              0.1015961
+   BK86 SET ELOAD CURR:           Skipped
+   SET ELOAD ON:                  Done
+        Module Time:              0.1017531
+   BK86 SET ELOAD ON:             Skipped
+   Wait:                          Done
+   Test 49.2 Rdr Fault wLoad 0.36A at POE+: Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        relay_Current_Fault [Out]:0
+        RDR_Current_Fault [Out]:  1
+        Module Time:              0.1909201
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   SET ELOAD OFF:                 Done
+        Module Time:              0.1016547
+   BK86 SET ELOAD OFF:            Skipped
+   Connect OUTPUT to ELOAD:       Done
+        Module Time:              0.3006824
+   SET ELOAD CURR:                Done
+        Module Time:              0.1010406
+   BK86 SET ELOAD CURR:           Skipped
+   SET ELOAD ON:                  Done
+        Module Time:              0.1008469
+   BK86 SET ELOAD ON:             Skipped
+   Wait:                          Done
+   Test 39.1 OUTPUT Fault wLoad 1.50A at POE+: Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+        relay_Current_Fault [Out]:0
+        RDR_Current_Fault [Out]:  1
+        Module Time:              0.184702
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   SET ELOAD OFF:                 Done
+        Module Time:              0.1016948
+   BK86 SET ELOAD OFF:            Skipped
+   Test 44.1 OUTPUT Fault woLoad at POE+: Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+        relay_Current_Fault [Out]:0
+        RDR_Current_Fault [Out]:  1
+        Module Time:              0.0997653
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   SET ELOAD CURR:                Done
+        Module Time:              0.1009674
+   BK86 SET ELOAD CURR:           Skipped
+   SET ELOAD ON:                  Done
+        Module Time:              0.1018061
+   BK86 SET ELOAD ON:             Skipped
+   Wait:                          Done
+   Test 49.1 OUTPUT Fault wLoad 1.8A at POE+: Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        relay_Current_Fault [Out]:1
+        RDR_Current_Fault [Out]:  1
+        Module Time:              0.1533383
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   SET ELOAD OFF:                 Done
+        Module Time:              0.1016594
+   BK86 SET ELOAD OFF:            Skipped
+   Disconnect OUTPUT from ELOAD:  Done
+        Module Time:              0.3007463
+   Disable Power POE+:            Done
+        Module Time:              0.3010389
+   Power POE off:                 Done
+        Module Time:              0.195194
+   Disable POE+:                  Done
+        Module Time:              0.300974
+   Wait:                          Done
+   Power LINE 8V on:              Done
+        Module Time:              0.2272133
+   Wait:                          Done
+   Test 56 VSystem OFF at 8V:     Passed
+        Measurement:              7.81962
+        Limits:
+           Low:                   7.6
+           High:                  8.4
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1322073
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 57 12V OFF at 8V:         Passed
+        Measurement:              0.99527
+        Limits:
+           Low:                   0.001
+           High:                  1
+        Comparison Type:          GELE (>= <=)
+        Module Time:              1.9090922
+        Number of Loops:          14
+        Number of Passes:         1
+        Number of Failures:       13
+        Final Loop Index:         14
+   Test 58 3.3V OFF at 8V:        Passed
+        Measurement:              0.02223
+        Limits:
+           Low:                   0.001
+           High:                  1
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1477904
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Statement:                     Done
+   While {looping} (Locals.HP34970[0]<0.002014 || Locals.HP34970[0]>0.002226) && Locals.x<30: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.002120289594793
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              1.8230029
+   End While:                     Done
+   Test 59 LINE current at 8V:    Passed
+        Measurement:              0.002120289594793
+        Limits:
+           Low:                   0.002014
+           High:                  0.002226
+        Comparison Type:          GELE (>= <=)
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = False
+                                  [1] = False
+                                  [2] = False
+                                  [3] = False
+                                  [4] = False
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = False
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.2173368
+   Test 60.1 POE Led OFF at 8V:   Passed
+        Module Time:              0.0028735
+   Test 60.2 POE+ Led OFF at 8V:  Passed
+        Module Time:              0.0015058
+   Test 60.3 LINE Led OFF at 8V:  Passed
+        Module Time:              0.0015723
+   Power LINE off:                Done
+        Module Time:              0.225241
+   Wait:                          Done
+   Power LINE 12V on:             Done
+        Module Time:              0.2392766
+   Wait:                          Done
+   Test 62 VSystem at 12V:        Passed
+        Measurement:              11.69116
+        Limits:
+           Low:                   11.4
+           High:                  12.6
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1309098
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 63 12V at 12V:            Passed
+        Measurement:              11.57346
+        Limits:
+           Low:                   11
+           High:                  12
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1319905
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 64 3.3V at 12V:           Passed
+        Measurement:              3.32586
+        Limits:
+           Low:                   3.2
+           High:                  3.4
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1316405
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Statement:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01624724217486
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1917127
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01669405387936
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1884466
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01625695474972
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1894646
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01625903363989
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1880983
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01682590540861
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1893196
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01624952063846
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1914386
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01628757264405
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1881469
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01666049227664
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1908459
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01631396623358
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1920974
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01633092997732
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1890746
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.0166505468661
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1884893
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01629430824818
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1875109
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.0169644260102
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1875381
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01751524874468
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1876036
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01699655733753
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1882913
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01694714627153
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1885962
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.0170354242738
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1886561
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01622131425672
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1874781
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01625337905862
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1926033
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.046075 || Locals.HP34970[0]>0.050925) && Locals.x<20: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01682088281002
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1913088
+   End While:                     Done
+   Test 65 LINE current at 12V:   Passed
+        Measurement:              0.01682088281002
+        Limits:
+           Low:                   0.01
+           High:                  0.02
+        Comparison Type:          GELE (>= <=)
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = False
+                                  [1] = False
+                                  [2] = True
+                                  [3] = False
+                                  [4] = False
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = True
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.215984
+   Test 66.1 POE Led OFF at 12V:  Passed
+        Module Time:              0.0019391
+   Test 66.2 POE+ Led OFF at 12V: Skipped
+   Test 66.3 LINE Led ON at 12V:  Passed
+        Module Time:              0.000837
+   Test 67.3 Status LINE at 12V:  Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        power_Line [Out]:         1
+        power_POE_Plus [Out]:     0
+        power_POE [Out]:          0
+        Module Time:              0.2297633
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 67.1 Status POE at 12V:   Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Test 67.2 Status POE+ at 12V:  Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Test 67.3 Status LINE at 12V:  Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   SET ELOAD CURR:                Done
+        Module Time:              0.101417
+   BK86 SET ELOAD CURR:           Skipped
+   SET ELOAD ON:                  Done
+        Module Time:              0.1009489
+   BK86 SET ELOAD ON:             Skipped
+   Wait:                          Done
+   Test 72.2 Rdr Fault wLoad 0.30A at 12V: Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+        relay_Current_Fault [Out]:0
+        RDR_Current_Fault [Out]:  0
+        Module Time:              0.0780178
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   SET ELOAD OFF:                 Done
+        Module Time:              0.1014859
+   BK86 SET ELOAD OFF:            Skipped
+   Test 77.2 Rdr Fault woLoad at 12V: Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+        relay_Current_Fault [Out]:0
+        RDR_Current_Fault [Out]:  0
+        Module Time:              0.1000543
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   SET ELOAD CURR:                Done
+        Module Time:              0.1016183
+   BK86 SET ELOAD CURR:           Skipped
+   SET ELOAD ON:                  Done
+        Module Time:              0.1017862
+   BK86 SET ELOAD ON:             Skipped
+   Wait:                          Done
+   Test 81.2 Rdr Fault wLoad 0.36A at 12V: Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        relay_Current_Fault [Out]:0
+        RDR_Current_Fault [Out]:  1
+        Module Time:              0.0829294
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   SET ELOAD OFF:                 Done
+        Module Time:              0.1016594
+   BK86 SET ELOAD OFF:            Skipped
+   Test 86.2 Rdr Fault woLoad at 12V: Skipped
+   Connect OUTPUT to ELOAD:       Done
+        Module Time:              0.3005175
+   Wait:                          Done
+   SET ELOAD CURR:                Done
+        Module Time:              0.1012869
+   BK86 SET ELOAD CURR:           Skipped
+   SET ELOAD ON:                  Done
+        Module Time:              0.1009532
+   BK86 SET ELOAD ON:             Skipped
+   Wait:                          Done
+   For {0} Locals.z = 0; Locals.z < 10; Locals.z += 1: Done
+      Test 72.1 OUTPUT Fault wLoad 2A at 12V ACK: Passed
+           Measurement:              1
+           Limits:
+              Low:                   1
+           Comparison Type:          EQ (==)
+           relay_Current_Fault [Out]:0
+           RDR_Current_Fault [Out]:  1
+           Module Time:              0.2091349
+           Number of Loops:          1
+           Number of Passes:         1
+           Number of Failures:       0
+           Final Loop Index:         1
+      If {True}:                     Done
+         Break:                         Done
+   End For:                       Done
+   Test 72.1 OUTPUT Fault wLoad 2A at 12V: Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   SET ELOAD OFF:                 Done
+        Module Time:              0.1009982
+   BK86 SET ELOAD OFF:            Skipped
+   Wait:                          Done
+   Test 77.1 OUTPUT Fault woLoad at 12V: Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+        relay_Current_Fault [Out]:0
+        RDR_Current_Fault [Out]:  1
+        Module Time:              0.1831896
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Wait:                          Done
+   Statement:                     Done
+   Enable Resistor:               Done
+        Module Time:              0.3007228
+   Wait:                          Done
+   SET ELOAD CURR:                Done
+        Module Time:              0.1011866
+   BK86 SET ELOAD CURR:           Skipped
+   SET LIMIT CURR:                Done
+        Module Time:              0.3008946
+   SET ELOAD ON:                  Done
+        Module Time:              0.1010575
+   BK86 SET ELOAD ON:             Skipped
+   Wait:                          Done
+   For {0} Locals.z = 0; Locals.z < 10; Locals.z += 1: Done
+      Test 81.1 OUTPUT Fault wLoad 2.4A at 12V ACK: Done
+           relay_Current_Fault [Out]:1
+           RDR_Current_Fault [Out]:  1
+           Module Time:              0.0864733
+      If {True}:                     Done
+         Break:                         Done
+   End For:                       Done
+   Wait:                          Done
+   Test 81.1 OUTPUT Fault wLoad 2.4A at 12V : Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Disable Resistor:              Done
+        Module Time:              0.3002241
+   SET ELOAD OFF:                 Done
+        Module Time:              0.1011912
+   BK86 SET ELOAD OFF:            Skipped
+   Disconnect OUTPUT from ELOAD:  Done
+        Module Time:              0.3009178
+   Power LINE off:                Done
+        Module Time:              0.2343931
+   Wait:                          Done
+   Power LINE 24V on:             Done
+        Module Time:              0.2317842
+   Wait:                          Done
+   Test 87 VSystem at 24V:        Passed
+        Measurement:              23.69623
+        Limits:
+           Low:                   22.8
+           High:                  25.2
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.145387
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 88 12V at 24V:            Passed
+        Measurement:              11.9972
+        Limits:
+           Low:                   11.4
+           High:                  12.6
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1467898
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 89 3.3V at 24V:           Passed
+        Measurement:              3.32324
+        Limits:
+           Low:                   3.2
+           High:                  3.4
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1315372
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Statement:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01257582229192
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1931923
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01285111724856
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1877549
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01285658888141
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1882287
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01287586435478
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1879734
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01229942967972
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1890611
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01264221373206
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1889246
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01243813323698
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1902874
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01256206835182
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1873649
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01250028373777
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1912429
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01285702129547
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1883896
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01297970908079
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1921805
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01259265298509
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1915726
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01254457241343
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.190631
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01253179970965
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1910598
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01283456927474
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1894365
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01290473598384
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1912399
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01265733142117
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1879821
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01281053730722
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1894805
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01301998966004
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1892011
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01233708253928
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1909846
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01264904911656
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1870802
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.0124560948442
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1896173
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01364106226018
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1902294
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01257864958036
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1882317
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.0122484719221
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1908029
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01210795557599
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1881565
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01266235401404
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1913137
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01292456028384
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1910624
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01241375201003
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1881989
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01281013816145
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.2045679
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.0127559207126
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1889895
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01274333095193
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1883449
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01267692288043
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1882804
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01246757031759
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.1923891
+   End While:                     Done
+   While {looping} (Locals.HP34970[0]<0.031 || Locals.HP34970[0]>0.040) && Locals.x<35: Done
+      Statement:                     Done
+      Wait:                          Done
+      LINE current:                  Passed
+           Measurement:              0.01274078639053
+           Limits:
+              Low:                   -1
+              High:                  1
+           Comparison Type:          GELE (>= <=)
+           Module Time:              0.2056734
+   End While:                     Done
+   Test 90 LINE current at 24V:   Passed
+        Measurement:              0.01274078639053
+        Limits:
+           Low:                   0.01
+           High:                  0.025
+        Comparison Type:          GELE (>= <=)
+   Test 92.3 Status LINE at 24V:  Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        power_Line [Out]:         1
+        power_POE_Plus [Out]:     0
+        power_POE [Out]:          0
+        Module Time:              0.2009002
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 92.1 Status POE at 24V:   Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Test 92.2 Status POE+ at 24V:  Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Test 92.3 Status LINE at 24V:  Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = False
+                                  [1] = False
+                                  [2] = True
+                                  [3] = False
+                                  [4] = False
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = True
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.2177582
+   Test 91.1 POE Led OFF at 24V:  Passed
+        Module Time:              0.0023729
+   Test 91.2 POE+ Led OFF at 24V: Skipped
+   Test 91.3 LINE Led ON at 24V:  Passed
+        Module Time:              0.0011141
+   Power BT dongle on:            Done
+        Module Time:              0.3474821
+   Wait:                          Done
+   Init ble dongle pulse on:      Done
+        Module Time:              0.3011075
+   Wait:                          Done
+   Init ble dongle pulse off:     Done
+        Module Time:              0.3010651
+   Statement:                     Done
+   While {looping} Locals.BleRssi<0xc1 && Locals.x<5: Done
+      Init ble dongle pulse on:      Skipped
+      Wait:                          Skipped
+      Init ble dongle pulse off:     Skipped
+      Wait:                          Skipped
+      Test Ble:                      Done
+           RSSI [Out]:               197
+           ACK [Out]:                1
+           Module Time:              2.0785068
+      Statement:                     Done
+   End While:                     Done
+   Test 224 BLE:                  Passed
+        Measurement:              0xc5
+        Limits:
+           Low:                   0xc1
+        Comparison Type:          GE (>=)
+   Statement:                     Done
+   While {looping} Locals.ack!=1 && Locals.x<5: Done
+      Wait:                          Skipped
+      Statement:                     Done
+      Test Wifi:                     Done
+           wiFi_Result [Out]:        01525353493D2D3334000000000000000000000000
+           ACK [Out]:                1
+           Module Time:              4.4047994
+      Get Wifi RSSI:                 Passed
+           Measurement:              -34
+           Limits:
+              Low:                   -100
+           Comparison Type:          GE (>=)
+   End While:                     Done
+   Test 222.1 WIFI ACK:           Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Test 222.2 WIFI RSSI:          Skipped
+   Activate REN:                  Done
+        Module Time:              0.3011124
+   Activate REX:                  Done
+        Module Time:              0.300151
+   Activate DPS:                  Done
+        Module Time:              0.3001275
+   Activate REL:                  Done
+        Module Time:              0.3001056
+   Activate TAMP:                 Done
+        Module Time:              0.3001652
+   Test 121.1 REN by P7 ON:       Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        RDR_Tamper [Out]:         1
+        REL [Out]:                1
+        REN [Out]:                1
+        DPS [Out]:                0
+        REX [Out]:                0
+        Module Time:              0.198376
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 121.1 REN by P7 ON:       Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Test 121.2 REX by P7 ON:       Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Test 121.3 DPS by P7 ON:       Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Test 121.4 REL by P7 ON:       Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Test 121.5 TAMP by P7 ON:      Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = False
+                                  [1] = False
+                                  [2] = True
+                                  [3] = False
+                                  [4] = False
+                                  [5] = True
+                                  [6] = False
+                                  [7] = False
+                                  [8] = True
+                                  [9] = True
+                                  [10] = True
+                                  [11] = True
+                                  [12] = True
+                                  [13] = False
+                                  [14] = False
+                                  [15] = True
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.2158886
+   Test 116 REN Led by P7 ON:     Passed
+        Module Time:              0.0012819
+   Test 117 REX Led by P7 ON:     Passed
+        Module Time:              0.0012147
+   Test 118 DPS Led by P7 ON:     Passed
+        Module Time:              0.0009035
+   Test 119 REL Led by P7 ON:     Passed
+        Module Time:              0.0007873
+   Test 120 TAMP Led by P7 ON:    Passed
+        Module Time:              0.0007436
+   Deactivate REN:                Done
+        Module Time:              0.2998199
+   Deactivate REX:                Done
+        Module Time:              0.3011164
+   Deactivate DPS:                Done
+        Module Time:              0.3011578
+   Deactivate REL:                Done
+        Module Time:              0.2999278
+   Deactivate TAMP:               Done
+        Module Time:              0.3010691
+   Test 132.2 REX by P7 OFF:      Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        RDR_Tamper [Out]:         0
+        REL [Out]:                0
+        REN [Out]:                0
+        DPS [Out]:                1
+        REX [Out]:                1
+        Module Time:              0.2671921
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 132.1 REN by P7 OFF:      Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Test 132.2 REX by P7 OFF:      Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Test 132.3 DPS by P7 OFF:      Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Test 132.4 REL by P7 OFF:      Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Test 132.5 TAMP by P7 OFF:     Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = False
+                                  [1] = False
+                                  [2] = True
+                                  [3] = False
+                                  [4] = False
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = True
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.2172533
+   Test 127 REN Led by P7 OFF:    Passed
+        Module Time:              0.0021332
+   Test 128 REX Led by P7 OFF:    Passed
+        Module Time:              0.0017355
+   Test 129 DPS Led by P7 OFF:    Passed
+        Module Time:              0.0015975
+   Test 130 REL Led by P7 OFF:    Passed
+        Module Time:              0.0016014
+   Test 131 TAMP Led by P7 OFF:   Passed
+        Module Time:              0.001621
+   Activate WIEGAND_D0:           Done
+        Module Time:              0.3002632
+   Activate WIEGAND_D1:           Done
+        Module Time:              0.3000642
+   Wait:                          Done
+   Test 159.1 WIEGAND_D0 by P8 ON: Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        wiegand_D1 [Out]:         1
+        wiegand_D0 [Out]:         1
+        Module Time:              0.1663117
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 159.1 WIEGAND_D0 by P8 ON: Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+   Test 159.2 WIEGAND_D1 by P8 ON: Skipped
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = False
+                                  [1] = False
+                                  [2] = True
+                                  [3] = False
+                                  [4] = False
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = True
+                                  [14] = True
+                                  [15] = True
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.2154122
+   Test 157 WIEGAND_D0 Led by P8 ON: Passed
+        Module Time:              0.0011515
+   Test 158 WIEGAND_D1 Led by P8 ON: Passed
+        Module Time:              0.0010396
+   Deactivate WIEGAND_D0:         Done
+        Module Time:              0.3003596
+   Deactivate WIEGAND_D1:         Done
+        Module Time:              0.3010939
+   Wait:                          Done
+   Test 164.1 WIEGAND_D0 by P8 OFF: Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+        wiegand_D1 [Out]:         0
+        wiegand_D0 [Out]:         0
+        Module Time:              0.1861558
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 164.1 WIEGAND_D0 by P8 OFF: Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Test 164.2 WIEGAND_D1 by P8 OFF: Passed
+        Measurement:              0
+        Limits:
+           Low:                   0
+        Comparison Type:          EQ (==)
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = False
+                                  [1] = False
+                                  [2] = True
+                                  [3] = False
+                                  [4] = False
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = True
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.2197182
+   Test 162 WIEGAND_D0 Led by P8 OFF: Passed
+        Module Time:              0.0024063
+   Test 163 WIEGAND_D1 Led by P8 OFF: Passed
+        Module Time:              0.0014654
+   Activate WIEGAND outputs:      Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        Module Time:              0.1720669
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 172 BEEP by CMD ON:       Passed
+        Measurement:              3.21731
+        Limits:
+           Low:                   3.1
+           High:                  3.4
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1439664
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 173 GREEN by CMD ON:      Passed
+        Measurement:              3.21469
+        Limits:
+           Low:                   3.1
+           High:                  3.4
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1332105
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 174 RED by CMD ON:        Passed
+        Measurement:              3.21469
+        Limits:
+           Low:                   3.1
+           High:                  3.4
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1477765
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Deactivate WIEGAND outputs:    Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        Module Time:              0.1723907
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 178 BEEP by CMD OFF:      Passed
+        Measurement:              0.01046
+        Limits:
+           Low:                   -0.1
+           High:                  0.5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1321169
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 179 GREEN by CMD OFF:     Passed
+        Measurement:              0.00915
+        Limits:
+           Low:                   -0.1
+           High:                  0.5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1341038
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 180 RED by CMD OFF:       Passed
+        Measurement:              0.00785
+        Limits:
+           Low:                   -0.1
+           High:                  0.5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1329638
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Activate Relay outputs:        Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        Module Time:              0.1836849
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 187 LOCK DRY NO by CMD ON: Passed
+        Measurement:              0.499662
+        Limits:
+           Low:                   0
+           High:                  5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.242453
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 188 LOCK DRY NC by CMD ON: Passed
+        Measurement:              9.9e+037
+        Limits:
+           Low:                   1000
+        Comparison Type:          GT (>)
+        Module Time:              0.641516
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 189 LOCK PWR NO by CMD ON: Passed
+        Measurement:              23.65176
+        Limits:
+           Low:                   23.5
+           High:                  24.5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1324613
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 190 LOCK PWR NC by CMD ON: Passed
+        Measurement:              0
+        Limits:
+           Low:                   -0.1
+           High:                  0.5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.158486
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 191 ALARM DRY NO by CMD ON: Passed
+        Measurement:              0.664869
+        Limits:
+           Low:                   0
+           High:                  5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.2420256
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 192 ALARM DRY NC by CMD ON: Passed
+        Measurement:              9.9e+037
+        Limits:
+           Low:                   1000
+        Comparison Type:          GT (>)
+        Module Time:              0.6413174
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 193 ALARM PWR NO by CMD ON: Passed
+        Measurement:              23.65176
+        Limits:
+           Low:                   23.5
+           High:                  24.5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1325963
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 194 ALARM PWR NC by CMD ON: Passed
+        Measurement:              0
+        Limits:
+           Low:                   -0.1
+           High:                  0.5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1335446
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 195 AUX DRY NO by CMD ON: Passed
+        Measurement:              0.459923
+        Limits:
+           Low:                   0
+           High:                  5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.2415415
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 196 AUX DRY NC by CMD ON: Passed
+        Measurement:              9.9e+037
+        Limits:
+           Low:                   1000
+        Comparison Type:          GT (>)
+        Module Time:              0.6596173
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 197 AUX PWR NO by CMD ON: Passed
+        Measurement:              23.65176
+        Limits:
+           Low:                   23.5
+           High:                  24.5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1312061
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 198 AUX PWR NC by CMD ON: Passed
+        Measurement:              -0.00131
+        Limits:
+           Low:                   -0.1
+           High:                  0.5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1330119
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = False
+                                  [1] = False
+                                  [2] = True
+                                  [3] = False
+                                  [4] = False
+                                  [5] = True
+                                  [6] = True
+                                  [7] = True
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = False
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.2158449
+   Test 184 LOCK Led by CMD ON:   Passed
+        Module Time:              0.001276
+   Test 185 ALARM Led by CMD ON:  Passed
+        Module Time:              0.0011148
+   Test 186 AUX Led by CMD ON:    Passed
+        Module Time:              0.0007449
+   Deactivate Relay outputs:      Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        Module Time:              0.2550692
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 205 LOCK DRY NO by CMD OFF: Passed
+        Measurement:              9.9e+037
+        Limits:
+           Low:                   1000
+        Comparison Type:          GT (>)
+        Module Time:              0.6434433
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 206 LOCK DRY NC by CMD OFF: Passed
+        Measurement:              0.626434
+        Limits:
+           Low:                   0
+           High:                  5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.242063
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 207 LOCK PWR NO by CMD OFF: Passed
+        Measurement:              -0.00131
+        Limits:
+           Low:                   -0.1
+           High:                  0.5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1357241
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 208 LOCK PWR NC by CMD OFF: Passed
+        Measurement:              23.69361
+        Limits:
+           Low:                   23.5
+           High:                  24.5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1723586
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 209 ALARM DRY NO by CMD OFF: Passed
+        Measurement:              9.9e+037
+        Limits:
+           Low:                   1000
+        Comparison Type:          GT (>)
+        Module Time:              0.659261
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 210 ALARM DRY NC by CMD OFF: Passed
+        Measurement:              0.528326
+        Limits:
+           Low:                   0
+           High:                  5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.2422262
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 211 ALARM PWR NO by CMD OFF: Passed
+        Measurement:              0
+        Limits:
+           Low:                   -0.1
+           High:                  0.5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1338306
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 212 ALARM PWR NC by CMD OFF: Passed
+        Measurement:              23.691
+        Limits:
+           Low:                   23.5
+           High:                  24.5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1496527
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 213 AUX DRY NO by CMD OFF: Passed
+        Measurement:              9.9e+037
+        Limits:
+           Low:                   1000
+        Comparison Type:          GT (>)
+        Module Time:              0.6439776
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 214 AUX DRY NC by CMD OFF: Passed
+        Measurement:              0.466959
+        Limits:
+           Low:                   0
+           High:                  5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.2429016
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 215 AUX PWR NO by CMD OFF: Passed
+        Measurement:              0.00131
+        Limits:
+           Low:                   -0.1
+           High:                  0.5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1333413
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 216 AUX PWR NC by CMD OFF: Passed
+        Measurement:              23.69361
+        Limits:
+           Low:                   23.5
+           High:                  24.5
+        Comparison Type:          GELE (>= <=)
+        Module Time:              0.1320951
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = False
+                                  [1] = False
+                                  [2] = True
+                                  [3] = False
+                                  [4] = False
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = False
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.2159889
+   Test 202 LOCK Led by CMD OFF:  Passed
+        Module Time:              0.0018054
+   Test 203 ALARM Led by CMD OFF: Passed
+        Module Time:              0.001373
+   Test 204 AUX Led by CMD OFF:   Passed
+        Module Time:              0.0014697
+   Activate Mode Leds:            Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        Module Time:              0.2489912
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Wait:                          Done
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = False
+                                  [1] = False
+                                  [2] = True
+                                  [3] = False
+                                  [4] = False
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = True
+                                  [16] = True
+                                  [17] = True
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.2148407
+   Test 203.1 FACT Led by CMD ON: Passed
+        Module Time:              0.0010466
+   Test 203.2 CONS Led by CMD ON: Passed
+        Module Time:              0.0008078
+   Test 203.3 COMM Led by CMD ON: Skipped
+   Test 203.3 COMM Led by CMD ON: Skipped
+   Deactivate Mode Leds:          Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        Module Time:              0.1845083
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Wait:                          Done
+   Get LED status:                Done
+        LEDnames [Out][0..21]:    [0] = 'POE'
+                                  [1] = 'POE+'
+                                  [2] = 'LINE'
+                                  [3] = 'OUT_FAULT'
+                                  [4] = 'RDR_FAULT'
+                                  [5] = 'LOCK'
+                                  [6] = 'ALARM'
+                                  [7] = 'AUXI'
+                                  [8] = 'REN'
+                                  [9] = 'REX'
+                                  [10] = 'DPS'
+                                  [11] = 'REL'
+                                  [12] = 'TAMP'
+                                  [13] = 'WIEGAND_D0'
+                                  [14] = 'WIEGAND_D1'
+                                  [15] = 'FACT'
+                                  [16] = 'CONS'
+                                  [17] = 'COMM'
+                                  [18] = 'RS485TX'
+                                  [19] = 'RS485RX'
+                                  [20] = 'LINK'
+                                  [21] = 'ACTIV'
+        LEDstatus [Out][0..21]:   [0] = False
+                                  [1] = False
+                                  [2] = True
+                                  [3] = False
+                                  [4] = False
+                                  [5] = False
+                                  [6] = False
+                                  [7] = False
+                                  [8] = False
+                                  [9] = False
+                                  [10] = False
+                                  [11] = False
+                                  [12] = False
+                                  [13] = False
+                                  [14] = False
+                                  [15] = False
+                                  [16] = False
+                                  [17] = False
+                                  [18] = False
+                                  [19] = False
+                                  [20] = False
+                                  [21] = False
+        Module Time:              1.2189445
+   Test 201.1 FACT Led by CMD OFF: Passed
+        Module Time:              0.0021434
+   Test 201.2 CONS Led by CMD OFF: Passed
+        Module Time:              0.0014323
+   Test 201.3 COMM Led by CMD OFF: Passed
+        Module Time:              0.0012945
+   Test 217 Get RTC:              Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        RTC [Out]:                ''
+        Module Time:              0.0883201
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Wait:                          Done
+   Test 219 Get RTC:              Passed
+        Measurement:              0
+        Limits:
+           Low:                   2
+        Comparison Type:          LE (<=)
+        RTC [Out]:                ''
+        Module Time:              0.1948457
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 220 Get Flash ID:         Passed
+        Measurement:              9766
+        Limits:
+           Low:                   9766
+        Comparison Type:          EQ (==)
+        Module Time:              0.2057598
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 226 K24 Encryption:       Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        Module Time:              0.2058923
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 228 K66 Encryption:       Skipped
+   Test 230 K66 SDRAM:            Skipped
+   Test 232 Set MAC:              Skipped
+   Test 233 Get MAC:              Skipped
+   Get date str:                  Done
+        Module Time:              0.0007161
+   Test 236 Set Date:             Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        Module Time:              0.1919997
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Test 237 Perform FDR:          Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        Module Time:              2.4130006
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Statement:                     Done
+   Statement:                     Skipped
+   Action:                        Skipped
+End If:                        Done
+Message Popup:                 Skipped
+Goto:                          Skipped
+Close Com RS485:               Done
+     Module Time:              0.6138627
+SET ELOAD OFF:                 Done
+     Module Time:              0.1010045
+BK86 SET ELOAD OFF:            Skipped
+CloseUART:                     Done
+     Module Time:              0.0012611
+CloseUART2:                    Done
+     Module Time:              0.0011965
+Power LINE off:                Done
+     Module Time:              0.1940087
+Power POE off:                 Done
+     Module Time:              0.3369203
+Power BT dongle off:           Done
+     Module Time:              0.1950788
+SET ELOAD CURR:                Done
+     Module Time:              0.1014389
+BK86 SET ELOAD CURR:           Skipped
+Disable Com UART:              Done
+     Module Time:              0.3005655
+Disable Com UART 2:            Done
+     Module Time:              0.3007582
+Disable REN:                   Done
+     Module Time:              0.3007943
+Disable Resistor:              Done
+     Module Time:              0.3007098
+Disable REX:                   Done
+     Module Time:              0.3008469
+Disable DPS:                   Done
+     Module Time:              0.3009227
+Disable REL:                   Done
+     Module Time:              0.3007357
+Disable TAMP:                  Done
+     Module Time:              0.3007724
+Disable BT:                    Done
+     Module Time:              0.3008413
+Disable WIEGAND_D0:            Done
+     Module Time:              0.3008449
+Disable WIEGAND_D1:            Done
+     Module Time:              0.3007833
+Disable Power POE:             Done
+     Module Time:              0.3007645
+Disable POE:                   Done
+     Module Time:              0.3008423
+Disable Power POE+:            Done
+     Module Time:              0.3007933
+Disable POE+:                  Done
+     Module Time:              0.3007578
+Connect RDR to ELOAD:          Done
+     Module Time:              0.3008194
+Set OperMsg:                   Done
+     Module Time:              0.0020428
+endtime:                       Done
+     Module Time:              0.0001732
+Get Endtime:                   Skipped
+Statement:                     Done
+Get Fail Str:                  Skipped
+Statement:                     Skipped
+Statement:                     Done
+send result:                   Done
+     Module Time:              0.0449262
+If {False}:                    Done
+Else:                          Done
+End If:                        Done
+InsertProcess:                 Skipped
+Remove unit:                   Skipped
+
+End Sequence: MainSequence
+
+End UUT Report
+
